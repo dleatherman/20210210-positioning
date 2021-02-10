@@ -1,0 +1,56 @@
+html {
+   height: 100%;
+}
+body {
+   align-items: stretch;
+   background: url('http://placekitten.com/500') no-repeat fixed;
+   background-size: cover;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   min-height: 100%;
+}
+
+.container {
+   background: #000;
+   margin: 0 auto;
+   padding: 3rem;
+}
+
+.circle {
+   background-color: rgba(255, 255, 255, 0.3);
+   border-radius: 50%;
+   border: 1px solid #fff;
+   padding: 1rem;
+}
+
+.flex-container {
+   background-color: green;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0 0.25rem;
+   padding: 1rem;
+}
+
+.flex-container div {
+   background-color: gold;
+   border: 1px solid goldenrod;
+   padding: 1rem;
+}
+
+.flip-card {
+   background-color: #000;
+   color: #fff;
+   padding: 1rem;
+   transition: transform 3s;
+}
+
+.flip-card-2 {
+   transform: rotateX(30deg) rotateY(30deg);
+   transform-origin: center bottom
+}
+
+.flip-card-container:hover .flip-card-2 {
+   transform: rotateX(0deg) rotateY(30deg);
+}
